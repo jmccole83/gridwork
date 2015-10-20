@@ -113,7 +113,16 @@ div[class*="wrapper-"]
 	-ms-flex-item-align: auto
 	align-self: auto
 	background: #ccc
-
+	
+/*animate column adjustment, optional class. Apply to .row to animate the resizing of columns*/
+.animated
+	*[class*="col"]
+		-webkit-transition: all 0.5s ease-out
+		-moz-transition: all 0.5s ease-out
+		-ms-transition: all 0.5s ease-out
+		-o-transition: all 0.5s ease-out
+		transition: all 0.5s ease-out
+		
 .col-quarter
 	width: 25%
 .col-third
@@ -1013,4 +1022,4 @@ div[class*="wrapper-"]
 	
 /*lazy designer, use margins! br tags are now hidden*/
 br
-	display: none !important*/
+	display: none !important
